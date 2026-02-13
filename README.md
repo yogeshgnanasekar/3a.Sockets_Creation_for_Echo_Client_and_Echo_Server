@@ -10,7 +10,7 @@ Sockets Links.
 4. Send and receive the message using the send function in socket.
 ## PROGRAM
 sever side
-/
+```
 import socket
  server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
  server.bind(('localhost', 8000))
@@ -32,9 +32,9 @@ import socket
 
  conn.close()
  server.close()
-/
+```
  cilent side
-/ 
+```
 import socket
  client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
  client.connect(('localhost', 8000))
@@ -50,7 +50,7 @@ while True:
     print("Echo from server:", reply)
 
 client.close()
-/
+```
 ## OUPUT
 <img width="987" height="500" alt="Screenshot 2026-02-13 142033" src="https://github.com/user-attachments/assets/11c6c702-0373-4a72-8160-132679a9db1a" />
 
